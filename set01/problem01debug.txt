@@ -1,0 +1,20 @@
+Breakpoint 1 at 0x14000154d: file problem01.c, line 6.
+(gdb) r
+Starting program: C:\Users\Dell\Desktop\PSC\c-activity-sets\set01\a.exe
+[New Thread 2036.0x245c]
+warning: Can not parse XML library list; XML support was disabled at compile time
+
+Thread 1 hit Breakpoint 1, main () at problem01.c:6
+6           printf("Adith Kiran Kumar");
+(gdb) s
+Adith Kiran Kumar7          return 0;
+(gdb) s
+8       }
+(gdb) s
+0x00007ff76be213c1 in __tmainCRTStartup ()
+(gdb) s
+Single stepping until exit from function __tmainCRTStartup,
+which has no line number information.
+[Thread 2036.0x245c exited with code 0]
+[Inferior 1 (process 2036) exited normally]
+(gdb) s

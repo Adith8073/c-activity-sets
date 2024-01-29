@@ -1,0 +1,63 @@
+Breakpoint 1 at 0x1400015d2: file problem03.c, line 23.
+(gdb) r
+Starting program: C:\Users\Dell\Desktop\PSC\c-activity-sets\set01\a.exe
+warning: Can not parse XML library list; XML support was disabled at compile time
+[New Thread 14204.0xbd0]
+
+Thread 1 hit Breakpoint 1, main () at problem03.c:23
+23          a=input();
+(gdb) s
+input () at problem03.c:5
+5           printf("enter the number\n");
+(gdb) s
+enter the number
+6           scanf("%d",&x);
+(gdb) s
+ss
+7           return x;
+(gdb) s
+8       }
+(gdb) s
+main () at problem03.c:24
+24          b=input();
+(gdb) s
+input () at problem03.c:5
+5           printf("enter the number\n");
+(gdb) s
+enter the number
+6           scanf("%d",&x);
+(gdb) s
+7           return x;
+(gdb) s
+8       }
+(gdb) s
+main () at problem03.c:26
+26          sum=add(a,b);
+(gdb) s
+add (a=0, b=0) at problem03.c:12
+12          sum=a+b;
+(gdb) s
+13          return sum;
+(gdb) s
+14      }
+(gdb) s
+main () at problem03.c:27
+27          output( a,  b,  sum);
+(gdb) s
+output (a=0, b=0, sum=0) at problem03.c:17
+17          printf("The sum of the enter numbers is %d ",sum);
+(gdb) s
+The sum of the enter numbers is 0 18    }
+(gdb) s
+main () at problem03.c:28
+28          return 0;
+(gdb) s
+29      }
+(gdb) s
+0x00007ff73d3513c1 in __tmainCRTStartup ()
+(gdb) s
+Single stepping until exit from function __tmainCRTStartup,
+which has no line number information.
+[Thread 14204.0x1ec0 exited with code 0]
+[Inferior 1 (process 14204) exited normally]
+(gdb)

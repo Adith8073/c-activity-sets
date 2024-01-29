@@ -1,0 +1,26 @@
+Breakpoint 1 at 0x14000154d: file problem02.c, line 6.
+(gdb) r
+Starting program: C:\Users\Dell\Desktop\PSC\c-activity-sets\set01\a.exe
+[New Thread 13328.0x185c]
+warning: Can not parse XML library list; XML support was disabled at compile time
+
+Thread 1 hit Breakpoint 1, main () at problem02.c:6
+6           x=10;
+(gdb) s
+7           y=100;
+(gdb) s
+8           z=x+y;
+(gdb) s
+9           printf("sun of x and y is %d",z);
+(gdb) s
+sun of x and y is 11010     return 0;
+(gdb) s
+11      }
+(gdb) s
+0x00007ff7790913c1 in __tmainCRTStartup ()
+(gdb) s
+Single stepping until exit from function __tmainCRTStartup,
+which has no line number information.
+[Thread 13328.0x185c exited with code 0]
+[Inferior 1 (process 13328) exited normally]
+(gdb)
