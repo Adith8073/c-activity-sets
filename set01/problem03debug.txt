@@ -1,8 +1,8 @@
-Breakpoint 1 at 0x1400015d2: file problem03.c, line 23.
+breakpoint 1 at 0x1400015d2: file problem03.c, line 23.
 (gdb) r
-Starting program: C:\Users\Dell\Desktop\PSC\c-activity-sets\set01\a.exe
+Starting program: C:\Users\Dell\Desktop\PSC\c-activity-sets\set01\a.exe 
+[New Thread 10540.0x518]
 warning: Can not parse XML library list; XML support was disabled at compile time
-[New Thread 14204.0xbd0]
 
 Thread 1 hit Breakpoint 1, main () at problem03.c:23
 23          a=input();
@@ -13,7 +13,7 @@ input () at problem03.c:5
 enter the number
 6           scanf("%d",&x);
 (gdb) s
-ss
+s
 7           return x;
 (gdb) s
 8       }
@@ -54,10 +54,9 @@ main () at problem03.c:28
 (gdb) s
 29      }
 (gdb) s
-0x00007ff73d3513c1 in __tmainCRTStartup ()
+0x00007ff69c0513c1 in __tmainCRTStartup ()
 (gdb) s
 Single stepping until exit from function __tmainCRTStartup,
 which has no line number information.
-[Thread 14204.0x1ec0 exited with code 0]
-[Inferior 1 (process 14204) exited normally]
-(gdb)
+[Thread 10540.0x440 exited with code 0]
+[Inferior 1 (process 10540) exited normally]
