@@ -1,0 +1,81 @@
+Breakpoint 1 at 0x14000160f: file problem05.c, line 35.
+(gdb) r
+Starting program: C:\Users\Dell\Desktop\PSC\c-activity-sets\set01\a.exe
+[New Thread 2160.0x23bc]
+warning: Can not parse XML library list; XML support was disabled at compile time
+
+Thread 1 hit Breakpoint 1, main () at problem05.c:35
+35          num1 = input();
+(gdb) s
+input () at problem05.c:6
+6           printf("enter the number\n");
+(gdb) s
+enter the number
+7           scanf("%d",&x);
+(gdb) s
+s
+8           return x;
+(gdb) s
+9       }
+(gdb) s
+main () at problem05.c:36
+36          num2 = input();
+(gdb) ss
+Undefined command: "ss".  Try "help".
+(gdb) s
+input () at problem05.c:6
+6           printf("enter the number\n");
+(gdb) s
+enter the number
+7           scanf("%d",&x);
+(gdb) s
+8           return x;
+(gdb) s
+9       }
+(gdb) s
+main () at problem05.c:37
+37          num3 = input();
+(gdb) s
+input () at problem05.c:6
+6           printf("enter the number\n");
+(gdb) s
+enter the number
+7           scanf("%d",&x);
+(gdb) s
+8           return x;
+(gdb) s
+9       }
+(gdb) s
+main () at problem05.c:39
+39          largest = compare(num1, num2, num3);
+(gdb) s
+compare (a=0, b=0, c=0) at problem05.c:13
+13          if (a >= b && a >= c)
+(gdb) s
+15              return a;
+(gdb) s
+23      }
+(gdb) s
+main () at problem05.c:41
+41          output(num1, num2, num3, largest);
+(gdb) s
+output (a=0, b=0, c=0, largest=0) at problem05.c:27
+27          printf("Numbers entered: %d, %d, %d\n", a, b, c);
+(gdb) s
+Numbers entered: 0, 0, 0
+28          printf("The largest number is: %d\n", largest);
+(gdb) s
+The largest number is: 0
+29      }
+(gdb) s
+main () at problem05.c:43
+43          return 0;
+(gdb) s
+44      }
+(gdb) s
+0x00007ff75c5613c1 in __tmainCRTStartup ()
+(gdb) s
+Single stepping until exit from function __tmainCRTStartup,
+which has no line number information.
+[Thread 2160.0x23bc exited with code 0]
+[Inferior 1 (process 2160) exited normally]
