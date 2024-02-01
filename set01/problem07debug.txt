@@ -1,0 +1,52 @@
+Breakpoint 1 at 0x14000154d: file problem07.c, line 9.
+(gdb) r
+Starting program: C:\Users\Dell\Desktop\PSC\c-activity-sets\set01\a.exe
+[New Thread 5272.0xfec]
+warning: Can not parse XML library list; XML support was disabled at compile time
+
+Thread 1 hit Breakpoint 1, main () at problem07.c:9
+9           n=input();
+(gdb) s
+input () at problem07.c:18
+18          printf("Enter the value \n");
+(gdb) s
+Enter the value
+19          scanf("%d",&n);
+(gdb) s
+s
+20          return n;
+(gdb) s
+22      }
+(gdb) s
+main () at problem07.c:10
+10          result=sum(n);
+(gdb) s
+sum (n=0) at problem07.c:25
+25          int i,result=0;
+(gdb) s
+26          for(i=1;i<=n;i++)
+(gdb) s
+30          return result;
+(gdb) s
+31      }
+(gdb) s
+main () at problem07.c:11
+11          output(n,result);
+(gdb) s
+output (n=0, result=0) at problem07.c:34
+34           printf("The sum of first %d natural numbers is: %d\n", n, result);
+(gdb) s
+The sum of first 0 natural numbers is: 0
+35      }
+(gdb) s
+main () at problem07.c:13
+13          return 0;
+(gdb) s
+14      }
+(gdb) s
+0x00007ff76c9013c1 in __tmainCRTStartup ()
+(gdb) s
+Single stepping until exit from function __tmainCRTStartup,
+which has no line number information.
+[Thread 5272.0x291c exited with code 0]
+[Inferior 1 (process 5272) exited normally]
