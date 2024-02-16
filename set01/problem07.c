@@ -1,33 +1,35 @@
 #include <stdio.h>
-int input();
-int sum(int n);
+void input();
+void sum(int n,int *result);
 void output(int n, int result);
 
 int main()
 {
-    int n ,result;
-    n=input();
-    result=sum(n);
+    int n ;
+    input(&n);
+    int result=0;
+    sum(n,&result);
     output(n,result);
 
     return 0;
 }
-int input()
+void input(int *n)
 {
-    int n;
+    
     printf("Enter the value \n");
-    scanf("%d",&n);
-    return n;
+    scanf("%d",n);
+    
 
 }
-int sum(int n)
+void sum(int n,int *result)
 {
-    int i,result=0;
+    int i;
+    // *result=0;
     for(i=1;i<=n;i++)
     {
-        result=result+i;
+        *result=*result+i;
     }
-    return result;
+    
 }
 void output(int n, int result)
 {
