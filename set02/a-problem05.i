@@ -1,5 +1,10 @@
+# 0 ".\\problem05.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 ".\\problem05.c"
 
-#include<stdio.h>
+# 1 "c:\\mingw\\x86_64-w64-mingw32\\include\\stdio.h" 1 3
+# 3 ".\\problem05.c" 2
 int input()
 {
     int x;
@@ -10,7 +15,7 @@ int input()
 int find_gcd(int a, int b)
 {
     int c;
-    c=a%b; //c should be equal to zero.......SO,
+    c=a%b;
     if(c != 0)
     {
         return find_gcd(b,c);

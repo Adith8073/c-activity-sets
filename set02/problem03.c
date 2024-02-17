@@ -20,11 +20,19 @@ int is_composite(int n)
 }
 void output(int n, int result)
 {
-    if(result==1){
-        printf("num is composite: ");
+    if(n==1)
+    {
+        printf("its neither a prime or composite number");
+    }
+    if(n==2)
+    {
+        printf("its a prime number");
+    }
+    else if(result==1){
+        printf("the number is composite: ");
     }
     else{
-        printf("num is prime");
+        printf("the number is prime");
     }
 }
 
