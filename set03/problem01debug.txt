@@ -1,0 +1,31 @@
+PS C:\Users\Dell\Desktop\PSC\c-activity-sets\set03> gdb a.exe
+GNU gdb (GDB) 11.1
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-w64-mingw32".
+Type "show configuration" for configuration details.
+--Type <RET> for more, q to quit, c to continue without paging--c
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.exe...
+(gdb) r
+Starting program: C:\Users\Dell\Desktop\PSC\c-activity-sets\set03\a.exe 
+[New Thread 19200.0x3764]
+warning: Can not parse XML library list; XML support was disabled at compile time
+Enter the coordinates of FIRST point in 2D
+2
+3
+Enter the coordinates of SECOND point in 2D
+4
+5
+The Distance of (2.000000,3.000000) and (4.000000,5.000000) is    2.828427[Thread 19200.0x3764 exited with code 0]
+[Inferior 1 (process 19200) exited normally]
+(gdb) quit
