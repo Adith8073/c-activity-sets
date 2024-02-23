@@ -21,16 +21,15 @@ float input() {
     return n;
 }
 
-float square_root(float n) {
-    float x = n;
-    float y = 1.0;
-    float epsilon = 0.00001; 
-
-    while (x - y > epsilon) {
-        x = (x + y) / 2;
-        y = n / x;
+float square_root(float n) 
+{
+    float x=n;
+    int iteration=10;
+    for(int i=0;i<iteration;i++)
+    {
+        x=0.5*(x+n/x);
     }
-
+    x=x/2;
     return x;
 }
 

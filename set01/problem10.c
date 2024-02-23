@@ -13,12 +13,12 @@ int compare_strings(char *string1, char *string2) {
     int i = 0;
     for (i = 0; string1[i] == string2[i] && string1[i] != '\0' && string2[i] != '\0'; i++);
     if (string1[i] > string2[i]) {
-        return 1; // string1 is greater
+        return 1; 
     }
     if (string2[i] > string1[i]) {
-        return -1; // string2 is greater
+        return -1;
     }
-    return 0; // strings are equal
+    return 0; 
 }
 
 void output(char *string1, char *string2, int result) {
