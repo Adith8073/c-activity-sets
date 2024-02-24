@@ -89,7 +89,7 @@ fibo(5) = 5
 
 ---
 
-5. Write a program to find all the prime numbers between 2 to n Eratosthenes Sieve method.
+########5. Write a program to find all the prime numbers between 2 to n Eratosthenes Sieve method.
 
 ***Function Declarations***
 ```c
@@ -109,7 +109,7 @@ void output(int n, int a[n]);
 2, 3, 7, 11, 13, 19, 23, 29, 31
 ```
 
----
+---__________
 
 6. Write a program to find the index of a substring of a string
 
