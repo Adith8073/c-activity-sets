@@ -26,6 +26,7 @@ int find_fibo(int n) {
         next = a + b;
         a = b;
         b = next;
+        printf("%d,\n",next);
     }
     return b;
 }
