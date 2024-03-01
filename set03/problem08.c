@@ -12,35 +12,34 @@ typedef struct polygon {
 
 int input_n()
 {
-    
+    int a;
+    printf("Enter the Sides of Polygon:\n"); //this function knows the value and the variable of 'a' BUT IT IS 'RETURN'ING ONLY THE VALUE OF 'a'
+    scanf("%d",&a);
+    return a;
 }
-point input_point(char *promt_msg)
+point input_point()
 {
-
-    point newPoint;
-    printf("%s", promt_msg);
-    printf(" x");
-    scanf("%f",&newPoint.x);
-    printf("%s", promt_msg);
-    printf(" y");
-    scanf("%f",&newPoint.y);
-    return newPoint;
-    
+    point d;
+    printf("Enter the X-axis point:");
+    scanf("%f", &d.x);
+    printf("Enter the Y-axis point:");
+    scanf("%f", &d.y);
+    return d;
 }
-int input_polygon(Polygon *p)
+void input_polygon(Polygon *p)
 {
-    for(int i=0;i<p->sides;i++){
-        char str[100]= "Enter the coordinates of x and y";
-        input_point(str);
+    p->sides = input_n();
+    for(int i=0;i<p->sides;i++)
+    {
+        p->p[i]=input_point();
     }
-    
-
 }
 float find_distance(point a, point b)
 {
-
+    //d=√((x2 – x1)² + (y2 – y1)²)
+    
 }
-void find_perimeter(Polygon* p)
+void find_perimeter(Polygon *p)
 {
 
 }
@@ -51,5 +50,6 @@ void output(Polygon p)
 
 int main()
 {
+    Polygon p;
 
 }
