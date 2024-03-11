@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Dell/Desktop/PSC/c-activity-sets/set04",
-      "program": "c:/Users/Dell/Desktop/PSC/c-activity-sets/set04/build/Debug/outDebug",
+      "cwd": "c:/Users/Dell/Desktop/PSC/c-activity-sets/set03",
+      "program": "c:/Users/Dell/Desktop/PSC/c-activity-sets/set03/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

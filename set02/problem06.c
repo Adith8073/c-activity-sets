@@ -23,22 +23,21 @@ void input_string(char *a)
     scanf("%s", a);
 }
 
-    void str_reverse(char *str, char *rev_str)
+void str_reverse(char *str, char *rev_str)
+{
+    int length = 0;
+    while (str[length] != '\0')
     {
-        int length = 0;
-        while (str[length] != '\0')
-        {
-            length++;
-        }
-
-        int i, j;
-        for (i = length - 1, j = 0; i >= 0; i--, j++)
-        {
-            rev_str[j] = str[i];
-        }
-        rev_str[j] = '\0';
+        length++;
     }
 
+    int i, j;
+    for (i = length - 1, j = 0; i >= 0; i--, j++)
+    {
+        rev_str[j] = str[i];
+    }
+    rev_str[j] = '\0';
+}
 
 void output(char *a, char *reverse_a)
 {
